@@ -1,0 +1,257 @@
+  .back-button {
+    cursor: pointer;
+    height: 60px;
+    left: 3%;
+    position: absolute;
+    top: 3.5%;
+    width: 40px;
+  }
+
+.back-button img:hover {
+    transition: 0.4s;
+    transform: scale(120%);
+    opacity: 70%;
+}
+
+#navContainer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-theme-primary);
+    border-radius: 10px 10px 0 0;
+}
+
+
+#navContainer .backbutton {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 10px;
+    mix-blend-mode:multiply;
+}
+#navContainer .logotype {
+    width: 70px;
+    height: 70px;
+    margin-top: 12px;
+    mix-blend-mode:multiply;
+}
+
+
+
+:root {
+    --color-text-primary: #033043;
+    --color-text-secondary: #acacac;
+    --color-bg-primary: #f5f5f5;
+    --color-bg-secondary: #dbdbdb;
+    --color-theme-primary: #0A7273;
+    --color-complementary: #e9e3d5;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-secondary);
+}
+.match {
+    display: flex;
+    flex-direction: column;
+    min-width: 700px;
+    margin: 4rem;
+    top: 60%;
+    
+}
+
+.match-status {
+    background-color: var(--color-complementary);
+    color: var(--color-text-primary);
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30%;
+    padding-left: 20%;
+}
+
+
+.match-content {
+    display: flex;
+    position: relative;
+}
+.column {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+}
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-bg-primary);
+    box-shadow: 0 4px 4px 0 rgba(48, 48, 48, 0.15), 0 0 0 15px var(--color-bg-secondary);
+}
+.team-logo img {
+    width: 50px;
+}
+.team-name {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-bg-primary);
+}
+.match-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.match-date {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+}
+
+.match-score {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.match-score span {
+    background: var(--color-text-primary);
+    border: 2px var(--color-text-primary) solid;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-size: large;
+    color: var(--color-bg-primary);
+}
+
+
+.container > :first-child {
+    background-image: url("../images/5567221.jpg");
+    background-repeat:round;
+    filter: brightness(30%);
+    position: absolute;  
+    height: 100%;  
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container {
+    position: relative;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.oddheader {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.bookmakers {
+  font-weight: bold;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
+    gap: 20px;
+    padding: 0px;
+  }
+  
+  .box {
+    width: 100%;
+    border: 1px solid var(--color-text-primary);
+    border-radius: 10px;
+    padding: 5px;
+    position: relative; 
+    color: var(--color-text-primary);
+    background: linear-gradient(180deg, rgba(3,48,67,1) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%);
+    background-repeat: no-repeat;
+  }
+  
+  .box h2 {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .odds-box {
+    display: flex;
+    justify-content: space-between;
+    width: 1fr;
+  }
+  
+  .odds {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 40%;
+  }
+  
+  .odd {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px;
+  }
+  
+  .label {
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  .tournament {
+    display: grid;
+    grid-template-rows: repeat(5);
+    color: #fff;
+    background: #033043;
+    margin-top: 50px;
+  }
+  
+  .main-info {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-weight: bold;
+    padding: 10px;
+ 
+  }
+  
+  .stand {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .table-col {
+    text-align: center;
+    width: 50px;
+    
+    
+  }
+
+  .teamDisplay {
+    width: 150px;
+    margin-right: 200px;
+  }

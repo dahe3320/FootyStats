@@ -1,0 +1,118 @@
+a path:hover {
+  fill: #064445;
+}
+
+.noLeague {
+  fill: #acacac;
+}
+
+.hider {
+  display: none;
+}
+
+.info-text {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0A7273;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px 0 rgba(48, 48, 48, 0.15), 0 0 0 8px #d7d7d7;
+  background-color: #0A7273;
+}
+
+.info-text span {
+  font-weight:bold;
+  font-size: xx-large;
+  position: absolute;
+  left: 45px; bottom: 490px;
+}
+
+.info-text:hover {
+ background-color: #064445;
+  transition: 0.5s;
+  cursor: pointer;
+  color:#ffffff;
+}
+
+.info-text:hover +.hider {
+  display: block;
+  border: 3px solid #ffffff;
+  background-color: #0A7273;
+  color: #ffffff;
+  border-radius: 10%;
+  max-width: 20%;
+  position: absolute;
+  left: 85px;
+  bottom: 400px;
+  padding: 10px;
+}
+
+#navContainer {
+  display: flex;
+  justify-content: center;
+  background-color: #0A7273;
+  margin-bottom: 5px;
+  border-radius: 0 0 10px 10px;
+}
+
+#navContainer .logotype {
+  width: 70px;
+  height: 70px;
+  margin-top: 12px;
+  mix-blend-mode:multiply;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    height: 750px;
+    max-width: 800px;
+    padding-left: 13px;
+    margin-top: 2%;
+  }
+   
+  .tabs label {
+    order: 1;
+    display: flex;
+    flex: 1;
+    justify-content:space-evenly;
+    padding: 1rem 2rem;
+    width: inherit;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #0A7273;
+    border: 4px solid #0A7273;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+   
+  .tabs .tab {
+    order: 9;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    padding: 20px;
+    box-shadow: -1px 1px 20px 0px #888888;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+   
+  .tabs input[type="radio"] {
+    display: none;
+  }
+   
+  body {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 60rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  svg {
+    margin-left: 5%;
+    padding: 2%;
+  }
